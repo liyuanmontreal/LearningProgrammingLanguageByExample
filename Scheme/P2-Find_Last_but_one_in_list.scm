@@ -1,0 +1,5 @@
+ (define (last-but-one l) 
+   (when (not (null? (cdr l))) 
+     (if (null? (cddr l)) 
+       (car l) 
+       (last-but-one (cdr l))))) 
